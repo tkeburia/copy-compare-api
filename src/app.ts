@@ -49,6 +49,10 @@ const getProcessedHtml = async (
 
   const queryResult = root.querySelector(querySelector);
 
+  if (!queryResult) {
+    return ""
+  }
+
   const converted = convert(queryResult.innerHTML, {
     formatters: {
       fooBlockFormatter: function (elem, walk, builder, formatOptions) {
