@@ -6,7 +6,7 @@ import { convert } from "html-to-text";
 import cors from "cors"
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 const OLD_BASE_URL = "https://www.ovoenergy.com/help";
 const NEW_BASE_URL = "https://moss-help-centre-ovotech.vercel.app/help/article";
