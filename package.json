@@ -1,14 +1,13 @@
 {
   "name": "cpa",
   "version": "1.0.0",
-  "homepage": "https://tkeburia.github.io/copy-compare-api",
   "description": "",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "ts-node-dev  --respawn --transpile-only src/app.ts",
-    "build": "tsc && rm -rf build && mv dist build",
+    "build": "tsc -p .",
     "start": "node build/app.js"
   },
   "keywords": [],
@@ -26,5 +25,8 @@
     "express": "^4.17.13",
     "html-to-text": "^9.0.5",
     "node-html-parser": "^6.1.5"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
