@@ -14,7 +14,8 @@ const NEW_BASE_URL = "https://moss-help-centre-ovotech.vercel.app/help/article";
 const OLD_QUERY_SELECTOR =
   "#main-content div:nth-child(1) div:nth-child(2) div:nth-child(1) div:nth-child(3) div:nth-child(2)";
 const NEW_QUERY_SELECTOR =
-  "#__next div:nth-child(1) div:nth-child(2) div:nth-child(1) div:nth-child(1) div:nth-child(2)";
+  // "#__next div:nth-child(1) div:nth-child(2) div:nth-child(1) div:nth-child(1) div:nth-child(2)";
+  "body div:nth-child(2) div:nth-child(2) div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(2)"
 
 const OLD_IMAGE_SRC_REGEX =
   /https:\/\/www\.ovobyus\.com\/transform\/(?<srcId>[a-f0-9-]+)\/.*/;
